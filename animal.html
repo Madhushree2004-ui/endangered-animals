@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Endangered Animals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .animal {
+      background: #fff;
+      border-left: 5px solid #4CAF50;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .animal h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .animal p {
+      font-size: 16px;
+    }
+
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #388e3c;
+    }
+
+    .thank-you {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .thank-you h2 {
+      color: #2e7d32;
+      font-size: 28px;
+    }
+
+    .thank-you img {
+      max-width: 300px;
+      width: 100%;
+      margin: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .thank-you .image-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Top 5 Endangered Animals</h1>
+  </header>
+
+  <div class="container" id="main-content">
+
+    <div class="animal">
+      <h2>1. Amur Leopard</h2>
+      <p><strong>Description:</strong> The Amur Leopard is one of the most critically endangered big cats, with fewer than 100 individuals remaining in the wild. These leopards are native to the temperate forests of the Russian Far East and parts of northeast China. They are known for their distinctive spotted coats and are skilled hunters.</p>
+      <p><strong>Fun Fact:</strong> Amur leopards are solitary and elusive creatures, with a territory size of up to 800 square kilometers. They primarily hunt roe deer, hares, and small wild boar.</p>
+      <p><strong>Threats:</strong> Habitat loss, poaching, and human-wildlife conflict are major threats to their survival. Conservation efforts include anti-poaching laws and habitat restoration projects.</p>
+    </div>
+
+    <div class="animal">
+      <h2>2. Javan Rhino</h2>
+      <p><strong>Description:</strong> The Javan Rhino is one of the rarest large mammals in the world, with only around 70 individuals remaining, all confined to a single national park in Java, Indonesia. These rhinos are smaller than their African relatives and have a single horn.</p>
+      <p><strong>Fun Fact:</strong> Javan rhinos are very shy and elusive, making it difficult for researchers to study them. They are mainly solitary animals and prefer dense tropical forests.</p>
+      <p><strong>Threats:</strong> The primary threats to the Javan rhino include habitat destruction due to human activity, such as logging and farming, as well as poaching for their horns, which are highly valued in traditional medicine.</p>
+    </div>
+
+    <div class="animal">
+      <h2>3. Vaquita</h2>
+      <p><strong>Description:</strong> The Vaquita is the smallest and most endangered porpoise species, found exclusively in the northern part of the Gulf of California in Mexico. With fewer than 10 individuals believed to exist, it is considered one of the world's most critically endangered marine mammals.</p>
+      <p><strong>Fun Fact:</strong> Vaquitas are known for their small size and characteristic dark rings around their eyes, similar to a raccoon’s markings. They primarily feed on small fish and invertebrates.</p>
+      <p><strong>Threats:</strong> The main threat to Vaquitas is bycatch, particularly from illegal gillnets used in fishing for totoaba, a fish whose bladder is highly valued in Chinese medicine. Efforts to protect Vaquitas include banning gillnet fishing in their habitat.</p>
+    </div>
+
+    <div class="animal">
+      <h2>4. Mountain Gorilla</h2>
+      <p><strong>Description:</strong> The Mountain Gorilla is a subspecies of the eastern gorilla found in the mountainous forests of central Africa, specifically in Rwanda, Uganda, and the Democratic Republic of the Congo. They live in groups and are known for their gentle and social nature.</p>
+      <p><strong>Fun Fact:</strong> Mountain Gorillas share over 98% of their DNA with humans, making them one of our closest living relatives. They live in groups led by a dominant male, known as a silverback, who protects and leads the group.</p>
+      <p><strong>Threats:</strong> Poaching, habitat loss due to deforestation, and disease transmission from humans are the main threats. However, conservation efforts have helped increase their population from a low of 250 individuals to over 1,000 today.</p>
+    </div>
+
+    <div class="animal">
+      <h2>5. Asian Elephant</h2>
+      <p><strong>Description:</strong> The Asian Elephant is smaller than its African counterpart, with distinct features such as smaller ears and a more rounded back. They are found in South and Southeast Asia, including India, Thailand, and Sri Lanka. These elephants are highly intelligent and have complex social structures.</p>
+      <p><strong>Fun Fact:</strong> Asian elephants communicate with a variety of sounds, including trumpets, rumbles, and squeals. They also use infrasound to communicate over long distances.</p>
+      <p><strong>Threats:</strong> Habitat destruction, poaching for ivory and skin, and human-elephant conflicts are the primary threats to Asian elephants. They are listed as endangered due to their declining population.</p>
+    </div>
+
+    <button class="button" onclick="showThankYou()">Next Page</button>
+  </div>
+
+  <div class="thank-you" id="thank-you">
+    <h2>Thank you for visiting this website 😊</h2>
+    <p>Here are the amazing animals you saw:</p>
+	
+    <div>
+      <p class="image-title">Amur Leopard</p>
+      <img src="images/leoperd.jpg" alt="Amur Leopard">
+    </div>
+    <div>
+      <p class="image-title">Javan Rhino</p>
+      <img src="images/rhino.jpg" alt="Javan Rhino">
+    </div>
+    <div>
+      <p class="image-title">Vaquita</p>
+      <img src="images/fish.jpg" alt="Vaquita">
+    </div>
+    <div>
+      <p class="image-title">Mountain Gorilla</p>
+      <img src="images/gorilla.jpg" alt="Mountain Gorilla">
+    </div>
+    <div>
+      <p class="image-title">Asian Elephant</p>
+      <img src="images/elephant.jpg" alt="Asian Elephant">
+    </div>
+  </div>
+
+  <script>
+    function showThankYou() {
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("thank-you").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
